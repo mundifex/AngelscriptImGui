@@ -13,7 +13,7 @@ class UMyCheatManager : UCheatManager
     UFUNCTION(BlueprintOverride)
     void InitCheatManager()
     {
-            ImGui::AddWorldEarlyDebugDelegate(this, n"OnImGui");
+        ImGui::AddWorldEarlyDebugDelegate(this, n"OnImGui");
     }
 
     UFUNCTION()

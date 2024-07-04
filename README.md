@@ -13,21 +13,21 @@ class UMyCheatManager : UCheatManager
     UFUNCTION(BlueprintOverride)
     void InitCheatManager()
     {
-        ImGui::AddWorldEarlyDebugDelegate(this, n"OnImGui");
+            ImGui::AddWorldEarlyDebugDelegate(this, n"OnImGui");
     }
 
     UFUNCTION()
     void OnImGui()
     {
-      // only show if ImGui is capturing or sharing input
-      if (ImGuiProps::IsInputEnabled() == false && ImGuiProps::IsKeyboardInputShared() == false)
-      {
-        return;
-      }
-      
-      ImGui::BeginMainMenuBar();
-      // ...
-      ImGui::EndMainMenuBar();
+        // only show if ImGui is capturing or sharing input
+        if (ImGuiProps::IsInputEnabled() == false)
+        {
+            return;
+        }
+        
+        ImGui::BeginMainMenuBar();
+        // ...
+        ImGui::EndMainMenuBar();
     }
 }
 ```

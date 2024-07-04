@@ -19,7 +19,7 @@ class UMyCheatManager : UCheatManager
     UFUNCTION()
     void OnImGui()
     {
-        // only show if ImGui is capturing or sharing input
+        // only show if ImGui is capturing input
         if (ImGuiProps::IsInputEnabled() == false)
         {
             return;

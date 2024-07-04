@@ -4,6 +4,8 @@ AngelscriptImGui
 
 Requires [ImGui](https://github.com/benui-dev/UnrealImGui) plugin
 
+Provides script namespace `ImGui` containing Angeslcript binds to native ImGui functions, e.g. `ImGui::Button("Click Me")`
+
 Example Usage
 -------------
 Within a CheatManager script subclass:

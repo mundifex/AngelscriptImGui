@@ -8,6 +8,12 @@ Provides script namespace `ImGui` containing Angeslcript binds to native ImGui f
 
 Example Usage
 -------------
+Create file `DefaultImGui.ini` in project's Config folder with desired keybinds:
+```
+[/Script/ImGui.ImGuiSettings]
+ToggleInput=(Key=F10)
+```
+
 Within a CheatManager script subclass:
 ```cpp
 class UMyCheatManager : UCheatManager
